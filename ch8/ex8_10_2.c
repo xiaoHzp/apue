@@ -13,7 +13,7 @@ int main()
 		return -1;
 	else if(pid == 0)
 	{
-		if(execle("/home/adtim/apue/ch8/test1","test1","arg1","arg2",(char*)0,env_init) < 0)
+		if(execle("test1","test1","arg1","arg2",(char*)0,env_init) < 0)
 			return -1;
 	}
 
